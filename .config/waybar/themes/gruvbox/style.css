@@ -1,0 +1,148 @@
+@import "colors.css";
+* {
+    font-family: 'JetBrainsMono Nerd Font', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+#waybar {
+    background: none;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#bluetooth,
+#clock,
+#network,
+#pulseaudio,
+#custom-spotify,
+#custom-power,
+#cpu,
+#custom-notification {
+    background-color: transparent;
+    color: inherit;
+    padding: 0 7px;
+    margin: 2px 3px;
+}
+
+#window {
+    background-color: #1d2021;
+    color: #ebdbb2;
+    border-radius: 0;
+    padding: 0 7px;
+    margin: 0;
+}
+
+.modules-center,
+.modules-right,
+.modules-left {
+    background-color: #1d2021;
+    border: 2px solid #ebdbb2;
+    padding: 5px 5px;
+    margin: 3px;
+}
+
+#workspaces {
+    background-color: #282828;
+    border: solid 2px #83a598;
+    margin: 0px 0px 0px 0px;
+    padding: 0 7px;
+}
+
+#workspaces button {
+    padding: 0px 7px;
+    margin: 0px 2px;
+    background-color: transparent;
+    color: #83a598;
+    border-radius: 0;
+}
+
+#workspaces button:first-child,
+#workspaces button:last-child {
+    border-radius: 0;
+}
+
+#workspaces button:hover {
+    background-color: #1d2021;
+    color: #ebdbb2;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #3c3836;
+    color: #EA6962;
+}
+
+#workspaces button.urgent {
+    background-color: #EA6962;
+    color: #fbf1c7;
+}
+
+#cpu { 
+  background-color: #282828;
+  color: #d79921;
+  border: solid 2px #d79921;
+}
+
+#custom-notification { 
+  background-color: #282828;
+  color: #83a598;
+  border: solid 2px #83a598;
+}
+
+#bluetooth {
+  background-color: #282828;
+  color: #458588;
+  border: solid 2px #458588;
+}
+
+#clock {
+    background-color: #282828;
+    color: #b16286;
+    border: solid 2px #b16286;
+}
+
+#network {
+    background-color: #282828;
+    color: #fe8019;
+    border: solid 2px #fe8019;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    background-color: #282828;
+    color: #d79921;
+    border: solid 2px #d79921;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#custom-spotify {
+    background-color: #282828;
+    color: #83a598;
+    border: solid 2px #83a598;
+    min-width: 100px;
+}
+
+#custom-power {
+    background-color: #282828;
+    color: #fb4934;
+    border: solid 2px #fb4934;
+    margin-right: 2px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #282828; 
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}

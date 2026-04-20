@@ -1,0 +1,7 @@
+return {
+    lazy = false;
+    'MeanderingProgrammer/render-markdown.nvim', 
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+    ---@module 'render-markdown'
+    opts = {},
+}
