@@ -7,8 +7,8 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-      "source": "$HOME/.config/fastfetch/imgs/hypr.png",
-      "type": "kitty",
+      "source": "$HOME/.config/fastfetch/asc.txt",
+      //"type": "kitty",
       "height": 15,
       "padding": {
     		"top": 1,

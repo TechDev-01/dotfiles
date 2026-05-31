@@ -30,6 +30,7 @@ alias ff='fastfetch'
 alias fm='yazi'
 alias sl='ls'
 alias cd='z'
+alias c='code .'
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -37,7 +38,11 @@ eval "$(starship init zsh)"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# man pages syntax highlighting
+export BAT_THEME="gruvbox-dark"
+eval "$(batman --export-env)"
+
+#export MANPAGER=""
 
 export PATH=$PATH:/home/steban/.spicetify
 

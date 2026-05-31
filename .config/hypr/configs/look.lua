@@ -1,0 +1,1 @@
+/home/steban/.config/hypr/themes//gruvbox/look.lua

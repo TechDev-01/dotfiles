@@ -6,7 +6,7 @@ WAYBAR_CSS="$HOME/.config/waybar/style.css"
 
 # Hyprland config
 H_THEME_DIR="$HOME/.config/hypr/themes/"
-ACTIVE_THEME="$HOME/.config/hypr/configs/look.conf"
+ACTIVE_THEME="$HOME/.config/hypr/configs/look.lua"
 
 # Hyprlock config
 HLOCK_THEME_DIR="$HOME/.config/hypr/themes/"
@@ -148,7 +148,7 @@ if [[ ! -d "$THEME_DIR/$theme" ]]; then
 fi
 
 waybar_theme="$THEME_DIR/$theme/style.css"
-hypr_theme="$H_THEME_DIR/$theme/look.conf"
+hypr_theme="$H_THEME_DIR/$theme/look.lua"
 hlock_theme="$HLOCK_THEME_DIR/$theme/hyprlock.conf"
 kitty_theme="$K_THEME_DIR/$theme/config.conf"
 swaync_theme="$S_THEME_DIR/$theme/config.json"
@@ -170,7 +170,7 @@ if [[ -d "$wall_dir" ]]; then
   --preview 'chafa --size=${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES} {}' \
   --preview-window=right:60%)
 
-  swww img "$wallpaper" --transition-type wipe \
+  awww img "$wallpaper" --transition-type wipe \
     --transition-duration 2.4 \
     --transition-fps 60 
 fi
