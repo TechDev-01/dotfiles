@@ -3,7 +3,7 @@
 Hyprland setup featuring different themes like: 
 - [catppuccin Mocha](https://catppuccin.com/)
 - [gruvbox](https://github.com/morhetz/gruvbox?tab=readme-ov-file)  
-- [tokyoNight](https://wixdaq.github.io/Tokyo-Night-Website/index.html)
+- [kanagawa](https://wixdaq.github.io/Tokyo-Night-Website/index.html)
 
 ## Screenshots
 <details>
