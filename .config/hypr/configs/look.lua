@@ -1,1 +1,1 @@
-/home/steban/.config/hypr/themes//gruvbox/look.lua
+/home/steban/.config/hypr/themes//kanagawa/look.lua

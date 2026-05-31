@@ -1,0 +1,138 @@
+* {
+  font-family: "ZedMono Nerd Font", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  padding: 0px;
+  margin:0px;
+  border-radius: 0px;
+}
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0px;
+    min-height: 0;
+    margin: 0.1em 0.2em 0.1em 0.2em;
+}
+
+#waybar { 
+  background-color:#1F1F28;
+  color: #223249;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-top: 3px transparent;
+  margin: 4px 5px;
+  padding: 3px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces button.focused {
+  background-color: transparent;
+}
+#workspace button.hover {
+  background-color: transparent;
+}
+#workspaces button.active {
+  color: #FF9E3B;
+}
+
+#workspaces button.urgent {
+  color: #E82424;
+}
+
+#clock,
+#cpu,
+#network,
+#pulseaudio,
+#custom-spotify,
+#custom-power,
+#custom-notification,
+#bluetooth {
+  padding: 0px 10px;
+  border-radius: 0px;
+  background-color: #1F1F28;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#window,
+#workspaces {
+  border-radius: 0px;
+  padding: 1px 10px;
+  border-bottom: 3px solid #DCA561;
+  color: #DCA561;
+}
+
+#cpu {
+  border-bottom: 2px solid #D27E99;
+  color: #D27E99;
+}
+
+#custom-power {
+  border-bottom: 2px solid #FF5D62;
+  color: #FF5D62;
+}
+
+tooltip,
+#clock.calendar,
+#clock tooltip,
+#clock > tooltip,
+#clock {
+  border-bottom: 2px solid #938AA9;
+}
+
+#pulseaudio {
+  border-bottom: 2px solid #6A9589;
+  color: #6A9589;
+}
+
+#clock {
+  border-bottom: 2px solid #938AA9;
+  color: #938AA9;
+}
+
+#bluetooth {
+  border-bottom: 2px solid #957FB8;
+  color: #957FB8;
+}
+
+#bluetooth.disconnected {
+  color: #C34043;
+}
+
+#network {
+  border-bottom: 2px solid #e0af68;
+  color: #e0af68;
+}
+
+#network.disconnected {
+ background-color: #f53c3c;
+ color: #282828;
+}
+
+#custom-spotify {
+  border-bottom: 2px solid #98BB6C;
+  color: #98BB6C;
+  padding-left: 10px;                                                                               
+  padding-right: 15px;
+}
+
+#custom-notification {
+  border-bottom: 2px solid #658594;
+  color: #658594;
+  padding-left: 10px;                                                                               
+  padding-right: 15px;
+}

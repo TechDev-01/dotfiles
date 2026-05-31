@@ -29,10 +29,11 @@ Hyprland setup featuring different themes like:
 
 <details>
 
-<summary>TokyoNight</summary>
+<summary>Kanagawa</summary>
 
-![tokyoNight](./screenshots/tokyoNight1.png)
-![tokyoNight](./screenshots/tokyoNight2.png)
+![Kanagawa](./screenshots/kana3.png)
+![Kanagawa](./screenshots/kana2.png)
+![Kanagawa](./screenshots/kana1.png)
 
 </details>
 

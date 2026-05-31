@@ -3,6 +3,7 @@
 # Waybar config
 THEME_DIR="$HOME/.config/waybar/themes/"
 WAYBAR_CSS="$HOME/.config/waybar/style.css"
+WAYBAR_CONFIG="$HOME/.config/waybar/config.jsonc"
 
 # Hyprland config
 H_THEME_DIR="$HOME/.config/hypr/themes/"
@@ -63,8 +64,8 @@ gtk_theme() {
     catppuccin) 
       gtk_name="catppuccin-mocha-lavender-standard+default"
     ;;
-    tokyonight)
-      gtk_name="Tokyonight-Dark"
+    kanagawa)
+      gtk_name="Kanagawa-Grey-Dark"
     ;;
     *)
       echo "Invalid GTK Theme"
@@ -84,8 +85,8 @@ local theme="$1"
     catppuccin)
       spot_theme="catppuccinMocha"
     ;;
-    tokyonight) 
-      spot_theme="tokyoNight"
+    kanagawa) 
+      spot_theme="kanagawa"
     ;;
     *) 
       echo "Error. Invalid Theme" 
@@ -148,6 +149,7 @@ if [[ ! -d "$THEME_DIR/$theme" ]]; then
 fi
 
 waybar_theme="$THEME_DIR/$theme/style.css"
+waybar_cfg="$THEME_DIR/$theme/config.jsonc"
 hypr_theme="$H_THEME_DIR/$theme/look.lua"
 hlock_theme="$HLOCK_THEME_DIR/$theme/hyprlock.conf"
 kitty_theme="$K_THEME_DIR/$theme/config.conf"
@@ -176,6 +178,7 @@ if [[ -d "$wall_dir" ]]; then
 fi
 
 applyTheme "$waybar_theme" "$WAYBAR_CSS"
+applyTheme "$waybar_cfg" "$WAYBAR_CONFIG"
 applyTheme "$hypr_theme" "$ACTIVE_THEME"
 applyTheme "$hlock_theme" "$HLOCK_ACTIVE_THEME"
 applyTheme "$kitty_theme" "$K_ACTIVE_THEME"

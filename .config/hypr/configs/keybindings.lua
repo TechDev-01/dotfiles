@@ -17,8 +17,9 @@ hl.bind(mainMod .. " + O", hl.dsp.exec_cmd(brave))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(wallpaper))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(blueman))
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(regionScreen))
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(screenshot))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(regionScreen))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd(screenshot))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh"))
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
@@ -39,10 +40,10 @@ for i = 1, 10 do
 end
 
 -- Move windows with maindMod + h,l,j,k
-hl.bind(mainMod .. " + l", hl.dsp.window.swap({ direction = "left" }))
-hl.bind(mainMod .. " + h", hl.dsp.window.swap({ direction = "right" }))
-hl.bind(mainMod .. " + k", hl.dsp.window.swap({ direction = "up" }))
-hl.bind(mainMod .. " + j", hl.dsp.window.swap({ direction = "down" }))
+hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.swap({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.swap({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.swap({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.swap({ direction = "down" }))
 
 -- Resize windows with mainMod + and arrow keys
 --[[ hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.resize({ 10, 0 }))
