@@ -1,15 +1,15 @@
-@define-color cc-bg #414868;
-@define-color noti-border-color #414868;
-@define-color noti-bg #565f89;
-@define-color noti-bg-darker #565f89;
+@define-color cc-bg #16161D;
+@define-color noti-border-color #16161D;
+@define-color noti-bg #2A2A37;
+@define-color noti-bg-darker #2A2A37;
 @define-color noti-bg-hover rgb(27, 27, 43);
 @define-color noti-bg-focus rgba(27, 27, 27, 0.6);
-@define-color text-color #c0caf5;
-@define-color text-color-disabled #9aa5ce;
-@define-color bg-selected #bb9af7;
+@define-color text-color #f9f5d7;
+@define-color text-color-disabled #bdae93;
+@define-color bg-selected #C8C093;
  
 * {
-  font-family: JetBrainsMono NFP;
+  font-family: ZedMono NFP;
   font-weight: bold;
 	font-size: 14px
 }
@@ -29,12 +29,12 @@
     background: @cc-bg;
     padding: 7px;
     border-radius: 0px;
-    border: 2px solid #565f89;
+    border: 2px solid #727169;
     margin: 0;
 }
  
 .close-button {
-    background: #bb9af7;
+    background: #C8C093;
     color: @cc-bg;
     text-shadow: none;
     padding: 0;
@@ -45,23 +45,23 @@
  
 .close-button:hover {
     box-shadow: none;
-    background: #7aa5ce;
+    background: #C8C093;
     transition: all .15s ease-in-out;
     border: none
 }
  
 .notification-action {
-    color: #a9b1b6;
-    border: 2px solid #565f89;
+    color: #C8C093;
+    border: 2px solid #85796f;
     border-top: none;
     border-radius: 0px;
-    background: #1a1b26;
+    background: #2A2A37;
 }
  
 .notification-default-action:hover,
 .notification-action:hover {
-    color: #a9b1b6;
-    background: #1a1b26;
+    color: #ebdbb2;
+    background: #2A2A37;
 }
  
 .floating-notifications {
@@ -70,17 +70,17 @@
 
 .summary {
 	padding-top: 7px;
-    font-size: 13px;
-    color: #a9b1b6;
+  font-size: 13px;
+  color: #C8C093;
 }
  
 .time {
     font-size: 11px;
-    color: #bb9af7;
+    color: #C8C093;
     margin-right: 24px
 }
  
 .body {
     font-size: 12px;
-    color: #a9b1b6;
+    color: #C8C093;
 }

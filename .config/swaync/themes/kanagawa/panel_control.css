@@ -1,18 +1,17 @@
-@define-color cc-bg #1a1b26;
-@define-color noti-border-color #1a1b26;
-@define-color noti-bg #414868;
-@define-color noti-bg-darker #414868;
+@define-color cc-bg #1F1F28;
+@define-color noti-border-color #1F1F28;
+@define-color noti-bg ##363646;
+@define-color noti-bg-darker #2A2A37;
 @define-color noti-bg-hover rgb(27, 27, 43);
 @define-color noti-bg-focus rgba(27, 27, 27, 0.6);
-@define-color text-color #c0caf5;
-@define-color text-color-disabled #9aa5ce;
-@define-color bg-selected #7dcfff;
+@define-color text-color #f9f5d7;
+@define-color text-color-disabled #bdae93;
+@define-color bg-selected #C8C093;
  
 * {
-  font-family: JetBrainsMono NFP;
+  font-family: ZedMono NFP;
   font-weight: bold;
 	font-size: 14px;
-  
 }
  
 .control-center .notification-row:focus,
@@ -23,7 +22,7 @@
  
 .control-center {
     background: @cc-bg;
-    border: 2px solid #7aa2f7;
+    border: 2px solid #1F1F28;
     border-radius: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -43,7 +42,7 @@
 }
  
 .widget-title {
-    color: #c0caf5;
+    color: #f9f5d7;
     background: @noti-bg-darker;
     padding: 0px !important;
     margin: 0px !important;
@@ -61,7 +60,7 @@
 /* } */
  
 .widget-title>button:hover {
-    background: #7dcfff;
+    background: #C8C093;
     color: @cc-bg;
 }
  
@@ -71,17 +70,17 @@
     margin: 5px 10px 10px 10px;
     border-radius: 5px;
     font-size: large;
-    color: #c0caf5;
+    color: #f2e5bc;
 }
  
 .widget-dnd>switch {
     border-radius: 4px;
-    background: #565f89;
+    background: #1F1F28;
 }
  
 .widget-dnd>switch:checked {
-    background: #c0caf5;
-    border: 1px solid #c0caf5;
+    background: #C8C093;
+    border: 1px solid #C8C093;
 }
  
 .widget-dnd>switch slider {
@@ -145,7 +144,7 @@
 }
  
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: #c0caf5;
+    background: #C8C093;
     color: @cc-bg;
 }
  
